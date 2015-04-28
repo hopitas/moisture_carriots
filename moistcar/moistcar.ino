@@ -40,10 +40,6 @@ void loop() {
   t = sht1x.readTemperatureC();
   h = sht1x.readHumidity();
 
-
-Serial.println(t);
-Serial.println(h);
-
   // Convert data to String
   String temperature = doubleToString(t, 2);
   String humidity = doubleToString(h, 2);
@@ -100,8 +96,12 @@ Serial.println(h);
   Serial.println(F("-------------------------------------"));
 
 
+  Serial.println(F("\n\nDisconnecting"));
+  client.stop();
+
+
   // Wait 10 seconds until next update
-  delay(10000);
+  delay(3600000);
 
 }
 

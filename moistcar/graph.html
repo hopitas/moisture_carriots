@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<div id="carriots-graph" style="max-width: 900px;margin:auto;"></div>
+
+
+<script src="https://www.carriots.com/js/graphs.js"></script>
+<script> 
+		var carriots = {
+			 'apikey' : 'ac7761cedc681e36f0efcde90dde38cc6fea1548ae2fe9d69e73f9a24b2e0515', 
+			 'mime' : 'image/svg+xml', 
+			 'type' : 'line', 
+			 'axis[x]' : 'at',
+			 'axis[y]' : 'Temperature', 
+			  'data[0]' : 'Temperature', 
+			  'data[1]' : 'Humidity', 
+			  'query[device]': 'SoilSensor@esperanza.esperanza', 
+			  'query[at_from]': '1430168400', 
+			  'query[sort]': '_id', 
+			  'query[order]': 'desc', 
+			  'query[max]': '50' 
+			  };
+</script>
+</body>
+</html>
